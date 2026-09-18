@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+  request-service.html — نموذج طلب خدمة تحليل بيانات
+  ======================================================================
+  هذا النموذج لا يرسل بيانات إلى أي خادم افتراضيًا (الموقع بدون Backend).
+  لتفعيل الاستلام المباشر بالبريد: افتحي script.js وضعي رابط Formspree
+  الخاص بك في SITE_CONFIG.formspreeEndpoint (الخطوات في README.md).
+  إلى أن تفعّليه، سيعمل زر "إرسال عبر واتساب" دائمًا بدون أي إعداد إضافي.
+-->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>طلب خدمة تحليل بيانات | Hanin AlFurati</title>
+  <meta name="description" content="أرسلي تفاصيل مشروعك لتحصلي على عرض سعر مخصص لخدمات تحليل البيانات وتصميم تقارير Power BI." />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">HF</span>
+        <span class="brand-name-ar">حنين الفراتي</span>
+        <span class="brand-name-en">Hanin AlFurati</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#services"><span lang-ar>الخدمات</span><span lang-en>Services</span></a>
+        <a href="index.html#projects"><span lang-ar>المشاريع</span><span lang-en>Projects</span></a>
+        <a href="index.html#packages"><span lang-ar>الباقات</span><span lang-en>Packages</span></a>
+        <a href="index.html#contact"><span lang-ar>التواصل</span><span lang-en>Contact</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle">AR | EN</button>
+        <button class="theme-toggle">🌓</button>
+        <button class="nav-toggle" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1><span lang-ar>طلب خدمة تحليل بيانات</span><span lang-en>Data Analytics Service Request</span></h1>
+      <p><span lang-ar>أخبريني عن مشروعك، وسأتواصل معك بعرض سعر ومدة تنفيذ مناسبة خلال يوم إلى يومي عمل.</span><span lang-en>Tell me about your project, and I'll follow up with a quote and timeline within 1–2 business days.</span></p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container request-layout">
+      <div>
+        <div class="form-notice">
+          <strong><span lang-ar>لحماية بياناتكم:</span><span lang-en>To protect your data:</span></strong>
+          <span lang-ar> يُرجى عدم إرسال أي ملفات أو معلومات سرية قبل تأكيد نطاق المشروع والاتفاق على قناة آمنة لنقل البيانات. هذا النموذج يجمع معلومات الطلب الأساسية فقط.</span>
+          <span lang-en> please do not send confidential files before the project scope is confirmed and a secure transfer method is agreed upon. This form collects only basic request information.</span>
+        </div>
+
+        <form id="requestForm" action="#" method="POST" enctype="multipart/form-data">
+          <div class="form-row">
+            <div class="form-group">
+              <label><span lang-ar>الاسم</span><span lang-en>Name</span> *</label>
+              <input type="text" id="field-name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label><span lang-ar>اسم الجهة / الشركة</span><span lang-en>Company / Entity Name</span></label>
+              <input type="text" id="field-company" name="company" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span lang-ar>البريد الإلكتروني</span><span lang-en>Email</span> *</label>
+              <input type="email" id="field-email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label><span lang-ar>رقم التواصل</span><span lang-en>Contact Number</span> *</label>
+              <input type="tel" id="field-phone" name="phone" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span lang-ar>القطاع</span><span lang-en>Sector</span></label>
+              <input type="text" id="field-sector" name="sector" placeholder="إدارة المرافق، الحج والعمرة، تجزئة..." />
+            </div>
+            <div class="form-group">
+              <label><span lang-ar>وسيلة التواصل المفضلة</span><span lang-en>Preferred Contact Method</span></label>
+              <select id="field-contact-method" name="preferred_contact">
+                <option value="whatsapp"><span lang-ar>واتساب</span><span lang-en>WhatsApp</span></option>
+                <option value="phone"><span lang-ar>اتصال هاتفي</span><span lang-en>Phone Call</span></option>
+                <option value="email"><span lang-ar>بريد إلكتروني</span><span lang-en>Email</span></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><span lang-ar>الخدمة المطلوبة</span><span lang-en>Required Service</span> *</label>
+            <select id="field-service" name="service" required>
+              <option value="" disabled selected><span lang-ar>اختاري الخدمة</span></option>
+              <!-- تُملأ تلقائيًا من SERVICES_DATA في script.js -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label><span lang-ar>ما هو هدف التقرير؟</span><span lang-en>What's the Report's Goal?</span></label>
+            <textarea id="field-goal" name="report_goal" placeholder="مثال: متابعة أداء الصيانة الوقائية شهريًا"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span lang-ar>نوع ملفات البيانات</span><span lang-en>Data File Type</span></label>
+              <input type="text" id="field-datatype" name="data_type" placeholder="Excel, CSV, SQL..." />
+            </div>
+            <div class="form-group">
+              <label><span lang-ar>عدد مصادر البيانات</span><span lang-en>Number of Data Sources</span></label>
+              <input type="number" min="0" id="field-sources-count" name="sources_count" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span lang-ar>هل يوجد تقرير/لوحة حالية؟</span><span lang-en>Existing Dashboard?</span></label>
+              <select id="field-existing" name="existing_dashboard">
+                <option value="no"><span lang-ar>لا</span><span lang-en>No</span></option>
+                <option value="yes"><span lang-ar>نعم</span><span lang-en>Yes</span></option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><span lang-ar>عدد المستخدمين المتوقع للتقرير</span><span lang-en>Expected Number of Users</span></label>
+              <input type="number" min="0" id="field-users" name="expected_users" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span lang-ar>الموعد المطلوب للتسليم</span><span lang-en>Expected Delivery Date</span></label>
+              <input type="date" id="field-delivery-date" name="delivery_date" />
+            </div>
+            <div class="form-group">
+              <label><span lang-ar>الميزانية التقريبية <span class="hint">(اختياري)</span></span><span lang-en>Approximate Budget <span class="hint">(Optional)</span></span></label>
+              <input type="text" id="field-budget" name="budget" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label><span lang-ar>وصف المشروع</span><span lang-en>Project Description</span> *</label>
+            <textarea id="field-description" name="description" required></textarea>
+          </div>
+          <div class="form-group">
+            <label><span lang-ar>عينة بيانات غير حساسة <span class="hint">(اختياري)</span></span><span lang-en>Non-Sensitive Data Sample <span class="hint">(Optional)</span></span></label>
+            <input type="file" id="field-datasample" name="data_sample" accept=".csv,.xlsx,.xls,.txt,.pdf,.png,.jpg,.jpeg" />
+            <p class="field-hint">
+              <span lang-ar>الصيغ المقبولة فقط: CSV, Excel, TXT, PDF, PNG, JPG — لا تُرفع ملفات تنفيذية أو مضغوطة. لا ترفقي أي بيانات سرية أو أسماء جهات حساسة قبل الاتفاق على قناة نقل آمنة (راجعي <a href="privacy.html" target="_blank">سياسة الخصوصية</a>).</span>
+              <span lang-en>Accepted types only: CSV, Excel, TXT, PDF, PNG, JPG — no executable or compressed files. Do not attach confidential data before agreeing on a secure transfer channel (see the <a href="privacy.html" target="_blank">Privacy Policy</a>).</span>
+            </p>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="field-consent" name="privacy_consent" required />
+            <label for="field-consent">
+              <span lang-ar>أوافق على <a href="privacy.html" target="_blank">سياسة الخصوصية</a>، وأقرّ بعدم إرسال بيانات سرية قبل تأكيد النطاق.</span>
+              <span lang-en>I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and confirm I won't send confidential data before scope confirmation.</span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary"><span lang-ar>إرسال الطلب</span><span lang-en>Submit Request</span></button>
+            <button type="button" id="sendWhatsappBtn" class="btn btn-whatsapp"><span lang-ar>إرسال عبر واتساب</span><span lang-en>Send via WhatsApp</span></button>
+          </div>
+          <div class="form-status"></div>
+        </form>
+      </div>
+
+      <aside>
+        <div class="card request-summary-card">
+          <h3><span lang-ar>لماذا التواصل معي؟</span><span lang-en>Why Work With Me?</span></h3>
+          <ul class="about-highlights" style="grid-template-columns:1fr">
+            <li><span lang-ar>+15 عامًا خبرة في تحليل البيانات وإدارة المشاريع</span><span lang-en>15+ years in data analytics & project management</span></li>
+            <li><span lang-ar>PMP® بتقييم Above Target</span><span lang-en>PMP® — Above Target</span></li>
+            <li><span lang-ar>تسليم واضح النطاق وجولات تعديل محددة</span><span lang-en>Clear scope & defined revision rounds</span></li>
+            <li><span lang-ar>سرية تامة لبيانات العملاء</span><span lang-en>Full confidentiality of client data</span></li>
+          </ul>
+          <hr style="border-color:var(--color-border); margin:18px 0" />
+          <p style="font-size:.88rem; color:var(--color-text-muted); margin-bottom:10px">
+            <span lang-ar>تفضلين التواصل المباشر؟</span><span lang-en>Prefer to reach out directly?</span>
+          </p>
+          <a href="#" data-wa-link class="btn btn-whatsapp btn-block" style="margin-bottom:10px"><span lang-ar>واتساب</span><span lang-en>WhatsApp</span></a>
+          <a href="#" data-email-link class="btn btn-outline on-light btn-block"><span lang-ar>بريد إلكتروني</span><span lang-en>Email</span></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span><span lang-ar>© 2026 حنين الفراتي. جميع الحقوق محفوظة.</span><span lang-en>© 2026 Hanin AlFurati. All rights reserved.</span></span>
+      <div>
+        <a href="privacy.html" style="display:inline; margin-inline-end:14px"><span lang-ar>الخصوصية</span><span lang-en>Privacy</span></a>
+        <a href="terms.html" style="display:inline"><span lang-ar>الشروط</span><span lang-en>Terms</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" data-wa-link class="whatsapp-float" aria-label="WhatsApp">💬</a>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!--
+  index.html — حنين الفراتي | Hanin AlFurati Data Analytics Portfolio
+  ======================================================================
+  كل نص في هذه الصفحة مكتوب مرتين بسمتي lang-ar و lang-en، ويقوم script.js
+  بإظهار النسخة المطابقة للغة المختارة تلقائيًا (بدون ترجمة آلية خارجية).
+  لتعديل رقم الجوال / واتساب / البريد / LinkedIn: افتحي script.js وعدّلي
+  كائن SITE_CONFIG في أعلى الملف فقط — لا حاجة للبحث عنها هنا.
+-->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حنين الفراتي | تحليل البيانات وتصميم تقارير Power BI</title>
+  <meta name="description" content="خدمات احترافية في تحليل البيانات وتنظيفها وتصميم تقارير Power BI ومؤشرات الأداء للشركات والأفراد في السعودية." />
+  <meta name="keywords" content="Power BI Saudi Arabia, Data Analytics, Dashboard Development, تحليل البيانات, تقارير Power BI, مؤشرات الأداء, إدارة المرافق, تحليل الأعمال, حنين الفراتي" />
+  <meta name="author" content="Hanin AlFurati" />
+  <!-- Open Graph — لمشاركة الموقع على LinkedIn. استبدلي og-image.jpg بصورة حقيقية 1200x630px -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="حنين الفراتي | تحليل البيانات وتصميم تقارير Power BI" />
+  <meta property="og:description" content="خدمات احترافية في تحليل البيانات وتصميم تقارير Power BI ومؤشرات الأداء للشركات والأفراد." />
+  <meta property="og:image" content="images/og/og-image.jpg" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">HF</span>
+        <span class="brand-name-ar">حنين الفراتي</span>
+        <span class="brand-name-en">Hanin AlFurati</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#projects"><span lang-ar>المشاريع</span><span lang-en>Projects</span></a>
+        <a href="#services"><span lang-ar>الخدمات</span><span lang-en>Services</span></a>
+        <a href="#process"><span lang-ar>آلية العمل</span><span lang-en>Process</span></a>
+        <a href="#packages"><span lang-ar>الباقات</span><span lang-en>Packages</span></a>
+        <a href="#about"><span lang-ar>نبذة عني</span><span lang-en>About</span></a>
+        <a href="#faq"><span lang-ar>الأسئلة المتكررة</span><span lang-en>FAQ</span></a>
+        <a href="#contact"><span lang-ar>التواصل</span><span lang-en>Contact</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" aria-label="Switch language">AR | EN</button>
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+        <a href="request-service.html" class="btn btn-primary btn-sm">
+          <span lang-ar>طلب خدمة</span><span lang-en>Request Service</span>
+        </a>
+        <button class="nav-toggle" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ 1) Hero ============ -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <div class="hero-eyebrow">
+          <span lang-ar>قائدة مشاريع وعمليات وتميّز تشغيلي | PMP®</span>
+          <span lang-en>Projects, Operations & Operational Excellence Leader | PMP®</span>
+        </div>
+        <h1 class="hero-title">
+          <span lang-ar>من البيانات المبعثرة إلى <span class="accent">قرارات واضحة تخدم نمو عملك</span></span>
+          <span lang-en>From scattered data to <span class="accent">clear decisions that grow your business</span></span>
+        </h1>
+        <p class="hero-text">
+          <span lang-ar>أحوّل بياناتك المتناثرة في ملفات Excel وأنظمة متعددة إلى تقارير Power BI تفاعلية وواضحة، تساعدك على متابعة الأداء الفعلي، واكتشاف نقاط الهدر والفرص، واتخاذ قرارات مبنية على أرقام لا على انطباعات.</span>
+          <span lang-en>I turn your data — scattered across Excel files and multiple systems — into clear, interactive Power BI dashboards that help you track real performance, spot waste and opportunity, and make decisions based on numbers, not guesswork.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="request-service.html" class="btn btn-primary">
+            <span lang-ar>ابدأ مشروعك الآن</span><span lang-en>Start Your Project Now</span>
+          </a>
+          <a href="#" data-wa-link class="btn btn-whatsapp">
+            <span lang-ar>تواصل عبر واتساب</span><span lang-en>Contact via WhatsApp</span>
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <span lang-ar>شاهدي نماذج من أعمالي</span><span lang-en>View My Work</span>
+          </a>
+        </div>
+        <p class="hero-credential">
+          <span lang-ar>+15 عامًا خبرة · PMP® Above Target · المدينة المنورة، السعودية</span>
+          <span lang-en>15+ years experience · PMP® Above Target · Madinah, Saudi Arabia</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2) المشاريع ============ -->
+  <section id="projects" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>أبرز المشاريع</span><span lang-en>Featured Projects</span></div>
+        <h2 class="section-title"><span lang-ar>دراسات حالة حقيقية</span><span lang-en>Real Case Studies</span></h2>
+        <p class="section-desc"><span lang-ar>كل مشروع يوضح القطاع، المشكلة، طبيعة البيانات، خطوات التحليل، والنتائج والتوصيات.</span><span lang-en>Each project shows the sector, the problem, the nature of the data, the analysis steps, and the results and recommendations.</span></p>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all"><span lang-ar>الكل</span><span lang-en>All</span></button>
+        <button class="filter-btn" data-filter="facilities"><span lang-ar>إدارة المرافق</span><span lang-en>Facilities</span></button>
+        <button class="filter-btn" data-filter="operations"><span lang-ar>العمليات</span><span lang-en>Operations</span></button>
+        <button class="filter-btn" data-filter="hr"><span lang-ar>تحليل أعمال</span><span lang-en>Business Analytics</span></button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"><!-- يُملأ تلقائيًا عبر script.js من PROJECTS_DATA --></div>
+    </div>
+  </section>
+
+  <!-- ============ 2ب) نماذج تصميمية توضيحية ============ -->
+  <section id="concept-samples" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>نماذج تصورية</span><span lang-en>Concept Samples</span></div>
+        <h2 class="section-title"><span lang-ar>أسلوبي في تصميم لوحات Power BI</span><span lang-en>My Power BI Design Style</span></h2>
+        <p class="section-desc">
+          <span lang-ar>نماذج تصميمية توضح أسلوب تنظيم وتصميم لوحات المعلومات، وتحتوي أرقامًا وأسماء افتراضية لأغراض العرض فقط — وليست بيانات عملاء حقيقيين.</span>
+          <span lang-en>Concept designs illustrating dashboard layout and design style, using sample/placeholder figures and names for display purposes only — not real client data.</span>
+        </p>
+      </div>
+      <div class="samples-grid">
+        <div class="card sample-card">
+          <div class="sample-thumb"><img src="images/samples/education-labor.png" alt="Education & Labor Market — Education-to-Employment Alignment" loading="lazy" /></div>
+          <h4><span lang-ar>التعليم وسوق العمل</span><span lang-en>Education & Labor Market</span></h4>
+          <p><span lang-ar>التوافق بين مخرجات التعليم واحتياجات التوظيف</span><span lang-en>Education-to-employment alignment & skills gap</span></p>
+        </div>
+        <div class="card sample-card">
+          <div class="sample-thumb"><img src="images/samples/healthcare.png" alt="Power BI Dashboards for Healthcare — Hospital Operations & Patient Safety" loading="lazy" /></div>
+          <h4><span lang-ar>الرعاية الصحية</span><span lang-en>Healthcare Analytics</span></h4>
+          <p><span lang-ar>عمليات المستشفى وجودة وسلامة المرضى</span><span lang-en>Hospital operations & patient safety</span></p>
+        </div>
+        <div class="card sample-card">
+          <div class="sample-thumb"><img src="images/samples/hr-analytics.png" alt="HR Analytics — Workforce Overview & Talent Performance" loading="lazy" /></div>
+          <h4><span lang-ar>تحليل الموارد البشرية</span><span lang-en>HR Analytics</span></h4>
+          <p><span lang-ar>نظرة عامة على القوى العاملة والأداء والمواهب</span><span lang-en>Workforce overview & talent performance</span></p>
+        </div>
+        <div class="card sample-card">
+          <div class="sample-thumb"><img src="images/samples/facility-management.png" alt="Facility Management — Operations & Asset Risk" loading="lazy" /></div>
+          <h4><span lang-ar>إدارة المرافق</span><span lang-en>Facility Management</span></h4>
+          <p><span lang-ar>عمليات المرافق ومخاطر الأصول</span><span lang-en>Facility operations & asset risk</span></p>
+        </div>
+        <div class="card sample-card">
+          <div class="sample-thumb"><img src="images/samples/sales-analytics.png" alt="Sales Analytics — Sales Performance & Customer Intelligence" loading="lazy" /></div>
+          <h4><span lang-ar>تحليل المبيعات</span><span lang-en>Sales Analytics</span></h4>
+          <p><span lang-ar>أداء المبيعات وذكاء العملاء</span><span lang-en>Sales performance & customer intelligence</span></p>
+        </div>
+        <div class="card sample-card">
+          <div class="sample-thumb"><img src="images/samples/project-portfolio.png" alt="Project Portfolio — Overview, Risk & Resources" loading="lazy" /></div>
+          <h4><span lang-ar>محفظة المشاريع</span><span lang-en>Project Portfolio</span></h4>
+          <p><span lang-ar>نظرة عامة على المشاريع والمخاطر والموارد</span><span lang-en>Portfolio overview, risk & resources</span></p>
+        </div>
+        <div class="card sample-card">
+          <div class="sample-thumb"><img src="images/samples/hospitality-analytics.png" alt="Hotel & Tourism — Operations & Guest Experience" loading="lazy" /></div>
+          <h4><span lang-ar>الفنادق والسياحة</span><span lang-en>Hotel & Tourism</span></h4>
+          <p><span lang-ar>عمليات الفنادق وتجربة الضيوف والجولات</span><span lang-en>Hotel operations & guest experience</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3) الخدمات ============ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>الخدمات</span><span lang-en>Services</span></div>
+        <h2 class="section-title"><span lang-ar>كيف يمكنني مساعدتك</span><span lang-en>How I Can Help You</span></h2>
+        <p class="section-desc"><span lang-ar>خدمات متكاملة تجمع بين تطوير الأعمال وذكاء الأعمال، من تنظيف البيانات إلى تصميم لوحات معلومات تنفيذية جاهزة للقرار — لأن أي تطوير أو تقدّم حقيقي يبدأ من البيانات، وتحليلها، والتعمّق فيها.</span><span lang-en>Integrated business development and business intelligence services — from data cleaning to decision-ready executive dashboards — because real growth and progress always start with data: analyzed, and deeply understood.</span></p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- 1 -->
+        <div class="card service-card">
+          <div class="service-icon">01</div>
+          <h3><span lang-ar>اجتماع تحليل الاحتياج وتحديد المتطلبات</span><span lang-en>Needs Assessment & Requirements Meeting</span></h3>
+          <p><span lang-ar>فهم أهداف عملك والمشكلة الفعلية قبل البدء بأي تحليل، وتحديد نطاق المشروع والمخرجات بدقة.</span><span lang-en>Understanding your business goals and the real problem before analysis begins, and precisely defining scope and deliverables.</span></p>
+          <ul class="service-sub">
+            <li><span lang-ar>فهم أهداف العمل والمشكلة الفعلية قبل البدء بأي تحليل</span><span lang-en>Understanding business goals and the real problem before analysis begins</span></li>
+            <li><span lang-ar>تحديد نطاق العمل والمخرجات المتوقعة بدقة</span><span lang-en>Precisely defining scope and expected deliverables</span></li>
+          </ul>
+          <a href="request-service.html?service=needs-assessment-meeting" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+        <!-- 2 -->
+        <div class="card service-card">
+          <div class="service-icon">02</div>
+          <h3><span lang-ar>تنظيف وتجهيز البيانات</span><span lang-en>Data Cleaning and Preparation</span></h3>
+          <p><span lang-ar>مراجعة ملفات Excel وCSV، ومعالجة البيانات الناقصة والمكررة والأخطاء، وتجهيزها للتحليل.</span><span lang-en>Reviewing Excel/CSV files, fixing missing, duplicate and erroneous data, and preparing it for analysis.</span></p>
+          <a href="request-service.html?service=data-cleaning" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+        <!-- 3 -->
+        <div class="card service-card">
+          <div class="service-icon">03</div>
+          <h3><span lang-ar>بناء نموذج البيانات</span><span lang-en>Data Modeling</span></h3>
+          <p><span lang-ar>ربط الجداول ومصادر البيانات المتعددة، وتصميم نموذج بيانات منظم وقابل للتوسع.</span><span lang-en>Linking multiple tables and data sources, and designing a structured, scalable data model.</span></p>
+          <a href="request-service.html?service=data-modeling" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+        <!-- 4 -->
+        <div class="card service-card">
+          <div class="service-icon">04</div>
+          <h3><span lang-ar>تصميم مؤشرات الأداء KPI</span><span lang-en>KPI Design and Performance Tracking</span></h3>
+          <p><span lang-ar>تحديد مؤشرات الأداء المناسبة لطبيعة عملك، ومقارنة الأداء الفعلي بالمستهدف والفترات السابقة.</span><span lang-en>Defining the right KPIs for your business, and comparing actual vs. target and prior periods.</span></p>
+          <a href="request-service.html?service=kpi-design" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+        <!-- 5 -->
+        <div class="card service-card">
+          <div class="service-icon">05</div>
+          <h3><span lang-ar>كتابة وتصحيح معادلات DAX</span><span lang-en>DAX Development and Troubleshooting</span></h3>
+          <p><span lang-ar>إنشاء معادلات DAX ومراجعة المعادلات الحالية ومعالجة المشكلات المتعلقة بالفلاتر والمقارنات الزمنية.</span><span lang-en>Building DAX measures, reviewing existing ones, and fixing filter/time-comparison issues.</span></p>
+          <ul class="service-sub">
+            <li><span lang-ar>بناء معادلات جديدة لاحتياجات تحليلية محددة</span><span lang-en>Building new measures for specific analytical needs</span></li>
+            <li><span lang-ar>مراجعة وتصحيح معادلات حالية بها مشكلات أو بطء</span><span lang-en>Reviewing and fixing existing measures with issues or slow performance</span></li>
+          </ul>
+          <a href="request-service.html?service=dax-development" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+        <!-- 6 -->
+        <div class="card service-card">
+          <div class="service-icon">06</div>
+          <h3><span lang-ar>تحليل بيانات إدارة المرافق</span><span lang-en>Facilities Management Analytics</span></h3>
+          <p><span lang-ar>تحليل الأصول وأوامر العمل والتذاكر والصيانة الوقائية والمواد والموردين والميزانية وSLA.</span><span lang-en>Analyzing assets, work orders, tickets, preventive maintenance, materials, vendors, budget, and SLA.</span></p>
+          <ul class="service-sub">
+            <li><span lang-ar>تحليل الأصول وأوامر العمل والتذاكر والصيانة الوقائية</span><span lang-en>Analyzing assets, work orders, tickets, and preventive maintenance</span></li>
+            <li><span lang-ar>تحليل المواد والموردين والميزانية ومؤشرات SLA</span><span lang-en>Analyzing materials, vendors, budget, and SLA indicators</span></li>
+          </ul>
+          <a href="request-service.html?service=facilities-analytics" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+
+        <!-- الخدمات الإضافية — تظهر عند الضغط على "جميع الخدمات" -->
+        <div class="card service-card services-more">
+          <div class="service-icon">07</div>
+          <h3><span lang-ar>إنشاء تقارير ولوحات Power BI</span><span lang-en>Power BI Dashboard Development</span></h3>
+          <p><span lang-ar>تصميم لوحات معلومات تفاعلية جاهزة لعرضها على الإدارة، لمتابعة الأداء والمبيعات والتكاليف والعمليات والميزانيات.</span><span lang-en>Designing interactive dashboards ready for management review — tracking performance, sales, costs, operations, and budgets.</span></p>
+          <a href="request-service.html?service=power-bi-dashboards" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+        <div class="card service-card services-more">
+          <div class="service-icon">08</div>
+          <h3><span lang-ar>مراجعة وتحسين تقارير Power BI الحالية</span><span lang-en>Power BI Dashboard Review & Improvement</span></h3>
+          <p><span lang-ar>مراجعة التقارير الحالية وتحسين نموذج البيانات والمعادلات والتصميم والأداء وتجربة المستخدم دون إعادة البناء من الصفر.</span><span lang-en>Reviewing existing dashboards and improving the data model, DAX, design, performance, and UX without rebuilding from scratch.</span></p>
+          <a href="request-service.html?service=dashboard-improvement" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+        <div class="card service-card services-more">
+          <div class="service-icon">09</div>
+          <h3><span lang-ar>أتمتة التقارير الدورية</span><span lang-en>Recurring Report Automation</span></h3>
+          <p><span lang-ar>تقليل الوقت المستغرق في تحديث التقارير يدويًا، وإعداد آلية تحديث بيانات دورية ومنظمة.</span><span lang-en>Reducing time spent updating reports manually, and setting up a recurring, organized data-refresh process.</span></p>
+          <a href="request-service.html?service=report-automation" class="btn btn-outline on-light btn-sm btn-block"><span lang-ar>اطلب هذه الخدمة</span><span lang-en>Request This Service</span></a>
+        </div>
+      </div>
+
+      <div class="services-toggle-wrap">
+        <button class="btn btn-outline on-light services-toggle-btn"><span lang-ar>جميع الخدمات</span><span lang-en>All Services</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4) النتائج | شريط الإنجازات ============ -->
+  <section class="stats-strip" id="results">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:32px">
+        <div class="section-eyebrow" style="color:rgba(255,255,255,.7)"><span lang-ar>النتائج</span><span lang-en>Results</span></div>
+        <h2 class="section-title" style="color:#fff"><span lang-ar>أثر حقيقي في مشاريع سابقة</span><span lang-en>Real Impact on Past Projects</span></h2>
+      </div>
+      <div class="stats-grid">
+        <!-- لتعديل الأرقام أو حذفها: كل بطاقة أدناه مستقلة، لا تضيفي أرقامًا غير معتمدة -->
+        <div class="stat-card"><b>22%</b><span lang-ar>ساهمت في رفع الكفاءة التشغيلية بنسبة 22%</span><span lang-en>Contributed to a 22% improvement in operational efficiency</span></div>
+        <div class="stat-card"><b>55%</b><span lang-ar>ساهمت في خفض التوقفات التشغيلية بنسبة 55%</span><span lang-en>Contributed to a 55% reduction in operational downtime</span></div>
+        <div class="stat-card"><b>85%</b><span lang-ar>ساهمت في خفض الأخطاء التشغيلية بنسبة 85%</span><span lang-en>Contributed to an 85% reduction in operational errors</span></div>
+        <div class="stat-card"><b>80%</b><span lang-ar>ساهمت في خفض المخاطر التشغيلية بنسبة 80%</span><span lang-en>Contributed to an 80% reduction in operational risks</span></div>
+        <div class="stat-card"><b>5</b><span lang-ar>ساهمت في متابعة أداء 5 قطاعات تشغيلية</span><span lang-en>Contributed to performance tracking across 5 operational sectors</span></div>
+        <div class="stat-card"><b>14</b><span lang-ar>ساهمت في دعم جاهزية 14 بعثة دولية</span><span lang-en>Contributed to readiness support for 14 international missions</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5) ماذا ستحصل عليه؟ ============ -->
+  <section id="deliverables">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>المخرجات</span><span lang-en>Deliverables</span></div>
+        <h2 class="section-title"><span lang-ar>ماذا ستحصل عليه؟</span><span lang-en>What You'll Get</span></h2>
+        <p class="section-desc"><span lang-ar>مخرجات واضحة ومحددة مسبقًا، بلا مفاجآت في آخر المشروع.</span><span lang-en>Clear, pre-defined deliverables — no surprises at the end of the project.</span></p>
+      </div>
+      <div class="deliverables-grid">
+        <div class="deliverable-item"><span class="deliverable-check">✓</span><span lang-ar>تقرير Power BI تفاعلي جاهز للاستخدام الفعلي</span><span lang-en>A ready-to-use, interactive Power BI report</span></div>
+        <div class="deliverable-item"><span class="deliverable-check">✓</span><span lang-ar>نموذج بيانات منظم وقابل للتحديث مستقبلاً</span><span lang-en>A structured, future-updatable data model</span></div>
+        <div class="deliverable-item"><span class="deliverable-check">✓</span><span lang-ar>مؤشرات أداء واضحة ومرتبطة بأهداف عملك</span><span lang-en>Clear KPIs tied to your business goals</span></div>
+        <div class="deliverable-item"><span class="deliverable-check">✓</span><span lang-ar>ملف المصدر (PBIX) حسب ما يُحدَّد في عرض السعر</span><span lang-en>The source file (PBIX), as defined in the quote</span></div>
+        <div class="deliverable-item"><span class="deliverable-check">✓</span><span lang-ar>جلسة تسليم وشرح لطريقة الاستخدام والتحديث</span><span lang-en>A delivery and walkthrough session covering usage and updates</span></div>
+        <div class="deliverable-item"><span class="deliverable-check">✓</span><span lang-ar>توثيق مختصر لخطوات التحديث الدوري للبيانات</span><span lang-en>A short guide documenting recurring data-update steps</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6) حلول مرنة للأفراد والشركات ============ -->
+  <section id="flexible-solutions" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>المرونة</span><span lang-en>Flexibility</span></div>
+        <h2 class="section-title"><span lang-ar>حلول مرنة للأفراد والشركات</span><span lang-en>Flexible Solutions for Individuals & Companies</span></h2>
+      </div>
+      <div class="flex-solutions-grid">
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>تسعير مرن حسب نطاق كل مشروع على حدة</span><span lang-en>Flexible pricing based on each project's scope</span></div>
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>إمكانية البدء بمشروع تجريبي صغير قبل التوسع</span><span lang-en>The option to start with a small pilot before scaling up</span></div>
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>تسليم مرحلي للمشاريع الكبيرة</span><span lang-en>Phased delivery for larger projects</span></div>
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>عدد جولات تعديل واضح ومتفق عليه مسبقًا</span><span lang-en>A clear, pre-agreed number of revision rounds</span></div>
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>دعم فني بعد التسليم حسب الباقة المختارة</span><span lang-en>Post-delivery support based on the chosen package</span></div>
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>إمكانية العمل عن بُعد بالكامل</span><span lang-en>Fully remote collaboration</span></div>
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>تعامل مباشر معي دون وسطاء</span><span lang-en>Direct communication with me, no intermediaries</span></div>
+        <div class="flex-solution-item"><span class="deliverable-check">✓</span><span lang-ar>سرية تامة لبيانات كل عميل</span><span lang-en>Full confidentiality for every client's data</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7) آلية العمل ============ -->
+  <section id="process">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>آلية العمل</span><span lang-en>Process</span></div>
+        <h2 class="section-title"><span lang-ar>كيف نعمل؟</span><span lang-en>How It Works</span></h2>
+      </div>
+      <div class="process-list">
+        <div class="process-item"><div><h4><span lang-ar>إرسال طلب الخدمة</span><span lang-en>Submit Your Request</span></h4><p><span lang-ar>تعبئة نموذج طلب الخدمة بالتفاصيل الأساسية لمشروعك.</span><span lang-en>Fill in the service request form with your project's basics.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>اجتماع تحديد الاحتياج</span><span lang-en>Requirements Meeting</span></h4><p><span lang-ar>مكالمة قصيرة لفهم أهدافك ونطاق العمل الفعلي.</span><span lang-en>A short call to understand your goals and real scope.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>فحص عينة غير حساسة من البيانات</span><span lang-en>Data Sample Assessment</span></h4><p><span lang-ar>مراجعة عينة أولية لتقييم جودة البيانات المتاحة قبل أي التزام.</span><span lang-en>Reviewing a sample to assess your data's quality before any commitment.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>تحديد نطاق العمل والمخرجات</span><span lang-en>Scope and Deliverables</span></h4><p><span lang-ar>الاتفاق الكتابي على ما سيتم تسليمه بدقة.</span><span lang-en>Written agreement on exactly what will be delivered.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>تقديم عرض السعر والمدة</span><span lang-en>Proposal and Timeline</span></h4><p><span lang-ar>عرض سعر مفصّل ومدة تنفيذ واضحة قبل البدء.</span><span lang-en>A detailed quote and a clear timeline before work begins.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>الموافقة والبدء الرسمي</span><span lang-en>Approval and Kickoff</span></h4><p><span lang-ar>بدء العمل رسميًا فور الموافقة على النطاق والعرض.</span><span lang-en>Work formally begins once the scope and quote are approved.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>تنظيف وتحليل البيانات</span><span lang-en>Data Cleaning and Analysis</span></h4><p><span lang-ar>تجهيز البيانات وتحليلها بعمق قبل بناء أي تقرير.</span><span lang-en>Preparing and deeply analyzing your data before building any report.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>بناء وتصميم التقرير</span><span lang-en>Dashboard Development</span></h4><p><span lang-ar>بناء لوحة المعلومات وفق النطاق المتفق عليه بالضبط.</span><span lang-en>Building the dashboard exactly per the agreed scope.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>المراجعة والتعديلات</span><span lang-en>Review and Revisions</span></h4><p><span lang-ar>مراجعتك للتقرير وتطبيق جولات التعديل المتفق عليها.</span><span lang-en>Your review and the agreed revision rounds.</span></p></div></div>
+        <div class="process-item"><div><h4><span lang-ar>التسليم وجلسة الشرح</span><span lang-en>Delivery and Walkthrough Session</span></h4><p><span lang-ar>تسليم التقرير النهائي مع جلسة شرح لطريقة الاستخدام والتحديث.</span><span lang-en>Final delivery with a session walking you through usage and updates.</span></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8) الباقات ============ -->
+  <section id="packages" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>باقات الخدمات</span><span lang-en>Service Packages</span></div>
+        <h2 class="section-title"><span lang-ar>اختاري نقطة الانطلاق المناسبة</span><span lang-en>Choose Your Starting Point</span></h2>
+        <p class="section-desc"><span lang-ar>لا توجد أسعار ثابتة — يُحدَّد السعر دائمًا بعد مراجعة نطاق مشروعك الفعلي.</span><span lang-en>There are no fixed prices — pricing is always determined after reviewing your project's actual scope.</span></p>
+      </div>
+      <div class="packages-grid packages-grid-3">
+        <div class="card package-card">
+          <h3>Starter</h3>
+          <p class="package-audience"><span lang-ar>مناسبة للأفراد وأصحاب المشاريع الصغيرة الذين يبدؤون رحلتهم مع البيانات</span><span lang-en>For individuals and small-project owners starting their data journey</span></p>
+          <p class="package-price"><span lang-ar>يُحدّد السعر بعد مراجعة نطاق العمل</span><span lang-en>Price Based on Project Scope</span></p>
+          <ul class="package-list">
+            <li><span lang-ar>مصدر بيانات واحد</span><span lang-en>One data source</span></li>
+            <li><span lang-ar>تنظيف أساسي للبيانات</span><span lang-en>Basic data cleaning</span></li>
+            <li><span lang-ar>صفحة Dashboard واحدة</span><span lang-en>One dashboard page</span></li>
+            <li><span lang-ar>مؤشرات أداء أساسية</span><span lang-en>Basic KPIs</span></li>
+            <li><span lang-ar>جولة تعديلات واحدة</span><span lang-en>One revision round</span></li>
+          </ul>
+          <a href="request-service.html?service=power-bi-dashboards" class="btn btn-outline on-light btn-block"><span lang-ar>اطلب عرض سعر</span><span lang-en>Request a Quote</span></a>
+        </div>
+        <div class="card package-card featured">
+          <span class="package-badge"><span lang-ar>الأكثر طلبًا</span><span lang-en>Most Popular</span></span>
+          <h3>Professional</h3>
+          <p class="package-audience"><span lang-ar>مناسبة للشركات والإدارات التي تحتاج تقارير أعمق ومتعددة المصادر</span><span lang-en>For companies and departments needing deeper, multi-source reporting</span></p>
+          <p class="package-price"><span lang-ar>يُحدّد السعر بعد مراجعة نطاق العمل</span><span lang-en>Price Based on Project Scope</span></p>
+          <ul class="package-list">
+            <li><span lang-ar>عدة جداول أو مصادر بيانات</span><span lang-en>Multiple tables/data sources</span></li>
+            <li><span lang-ar>تنظيف وربط البيانات</span><span lang-en>Data cleaning & linking</span></li>
+            <li><span lang-ar>بناء نموذج بيانات (Data Model)</span><span lang-en>Data model build</span></li>
+            <li><span lang-ar>معادلات DAX مخصصة</span><span lang-en>Custom DAX measures</span></li>
+            <li><span lang-ar>حتى ثلاث صفحات تقرير</span><span lang-en>Up to 3 report pages</span></li>
+            <li><span lang-ar>فلاتر ومقارنات زمنية</span><span lang-en>Filters & time comparisons</span></li>
+            <li><span lang-ar>جولتا تعديلات</span><span lang-en>Two revision rounds</span></li>
+            <li><span lang-ar>جلسة تسليم وشرح</span><span lang-en>Delivery & walkthrough session</span></li>
+          </ul>
+          <a href="request-service.html?service=power-bi-dashboards" class="btn btn-primary btn-block"><span lang-ar>اطلب عرض سعر</span><span lang-en>Request a Quote</span></a>
+        </div>
+        <div class="card package-card">
+          <h3>Custom</h3>
+          <p class="package-audience"><span lang-ar>مناسبة للمشاريع الكبيرة أو المخصصة أو الدعم المستمر حسب حاجتك</span><span lang-en>For large, custom projects or ongoing support tailored to your needs</span></p>
+          <p class="package-price"><span lang-ar>يُحدّد السعر بعد مراجعة نطاق العمل</span><span lang-en>Price Based on Project Scope</span></p>
+          <ul class="package-list">
+            <li><span lang-ar>نطاق مصمَّم بالكامل حسب مشروعك</span><span lang-en>Scope fully tailored to your project</span></li>
+            <li><span lang-ar>تحليل متقدم ومؤشرات تنفيذية</span><span lang-en>Advanced analysis & executive KPIs</span></li>
+            <li><span lang-ar>عدد صفحات وجولات تعديل حسب الاتفاق</span><span lang-en>Page count & revision rounds per agreement</span></li>
+            <li><span lang-ar>خيار دعم وتحديث دوري مستمر</span><span lang-en>Optional ongoing support & refresh subscription</span></li>
+          </ul>
+          <a href="request-service.html" class="btn btn-outline on-light btn-block"><span lang-ar>اطلب عرض سعر</span><span lang-en>Request a Quote</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9) نبذة عني ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <img src="images/profile/hanin-profile.png" alt="حنين الفراتي" loading="lazy" />
+      </div>
+      <div class="about-text">
+        <div class="section-eyebrow"><span lang-ar>نبذة عني</span><span lang-en>About</span></div>
+        <h2 class="section-title"><span lang-ar>حنين الفراتي</span><span lang-en>Hanin AlFurati</span></h2>
+        <p>
+          <span lang-ar>قائدة مشاريع وعمليات وتميّز تشغيلي، حاصلة على شهادة PMP®، ولدي خبرة تتجاوز 15 عامًا في إدارة المشاريع والعمليات وإدارة المرافق. على مدار هذه المسيرة، اكتشفت أن أكبر فجوة تواجه الشركات ليست في نقص البيانات، بل في غياب من يحوّلها إلى صورة واضحة يمكن البناء عليها. لذلك أعمل اليوم على تحويل البيانات التشغيلية المبعثرة إلى مؤشرات وتقارير Power BI تساعد القيادات على مراقبة الأداء، وإدارة المخاطر، واتخاذ قرارات قابلة للتنفيذ فعليًا — لا مجرد أرقام على الورق.</span>
+          <span lang-en>A PMP®-certified projects, operations, and operational excellence professional with more than 15 years of experience in project management, operations, and facilities. Along the way, I found that the real gap companies face isn't a lack of data — it's the absence of someone who can turn it into a clear, actionable picture. Today, I turn scattered operational data into Power BI dashboards and metrics that help leadership monitor performance, manage risk, and make decisions they can actually act on.</span>
+        </p>
+        <ul class="about-highlights">
+          <li><span lang-ar>خبرة تتجاوز 15 عامًا في إدارة المشاريع والعمليات</span><span lang-en>15+ years in project & operations management</span></li>
+          <li><span lang-ar>PMP® بتقييم Above Target</span><span lang-en>PMP® — Above Target rating</span></li>
+          <li><span lang-ar>تحليل بيانات وتصميم تقارير Power BI احترافية</span><span lang-en>Data analytics & professional Power BI dashboard design</span></li>
+          <li><span lang-ar>قيادة فرق عمل ومتابعة مؤشرات KPI والجودة</span><span lang-en>Team leadership & KPI/quality tracking</span></li>
+          <li><span lang-ar>إدارة الأصول والتذاكر وأوامر العمل بدقة</span><span lang-en>Precise asset, ticket & work-order management</span></li>
+          <li><span lang-ar>خبرة ميدانية في قطاعي الحج والعمرة</span><span lang-en>Field experience in the Hajj & Umrah sectors</span></li>
+          <li><span lang-ar>إدارة 5 قطاعات تشغيلية والتنسيق مع 14 بعثة دولية</span><span lang-en>Managed 5 operational sectors, coordinated 14 int'l missions</span></li>
+          <li><span lang-ar>خبرة عملية في كتابة وتصحيح معادلات DAX</span><span lang-en>Hands-on experience writing and troubleshooting DAX</span></li>
+          <li><span lang-ar>بناء نماذج بيانات منظمة وقابلة للتوسع</span><span lang-en>Building structured, scalable data models</span></li>
+          <li><span lang-ar>تحويل البيانات التشغيلية إلى قرارات قابلة للتنفيذ</span><span lang-en>Turning operational data into actionable decisions</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10) من نخدم؟ ============ -->
+  <section id="who-we-serve" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>من نخدم؟</span><span lang-en>Who We Serve</span></div>
+        <h2 class="section-title"><span lang-ar>هذا الموقع مُوجّه لك، إن كنتَ من</span><span lang-en>This Site Is for You If You're</span></h2>
+      </div>
+      <div class="audience-grid">
+        <span class="audience-chip"><span lang-ar>شركات إدارة المرافق</span><span lang-en>Facilities Management Companies</span></span>
+        <span class="audience-chip"><span lang-ar>شركات التشغيل والصيانة</span><span lang-en>O&M Companies</span></span>
+        <span class="audience-chip"><span lang-ar>الفنادق والضيافة</span><span lang-en>Hotels & Hospitality</span></span>
+        <span class="audience-chip"><span lang-ar>شركات السياحة والحج والعمرة</span><span lang-en>Tourism, Hajj & Umrah Companies</span></span>
+        <span class="audience-chip"><span lang-ar>الشركات الصغيرة والمتوسطة</span><span lang-en>SMEs</span></span>
+        <span class="audience-chip"><span lang-ar>إدارات المشاريع وPMO</span><span lang-en>PMOs & Project Offices</span></span>
+        <span class="audience-chip"><span lang-ar>الإدارات المالية</span><span lang-en>Finance Departments</span></span>
+        <span class="audience-chip"><span lang-ar>المتاجر وأصحاب المشاريع</span><span lang-en>Shop & Business Owners</span></span>
+        <span class="audience-chip"><span lang-ar>الأفراد والباحثون</span><span lang-en>Individuals & Researchers</span></span>
+        <span class="audience-chip"><span lang-ar>الجهات التي تعتمد على ملفات Excel يدوية</span><span lang-en>Teams Relying on Manual Excel Files</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 11) الخبرات ============ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>الخبرات</span><span lang-en>Experience</span></div>
+        <h2 class="section-title"><span lang-ar>المسيرة المهنية</span><span lang-en>Professional Journey</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="card"><h4><span lang-ar>قائدة فريق العمليات والصيانة</span><span lang-en>Operations & Maintenance Team Leader</span></h4><span><span lang-ar>مهيل للمرافق — مشروع رؤى المدينة</span><span lang-en>Maheel Facilities — Ruya Al Madinah</span></span></div></div>
+        <div class="timeline-item"><div class="card"><h4><span lang-ar>رئيسة قسم شؤون الحجاج والشركات</span><span lang-en>Head of Pilgrims & Corporate Affairs</span></h4><span><span lang-ar>شركة الرفادة</span><span lang-en>Al-Rifada Company</span></span></div></div>
+        <div class="timeline-item"><div class="card"><h4><span lang-ar>مسؤولة حلول ذكاء الأعمال والأنظمة</span><span lang-en>BI Solutions & Systems Officer</span></h4><span><span lang-ar>شركة الرفادة</span><span lang-en>Al-Rifada Company</span></span></div></div>
+        <div class="timeline-item"><div class="card"><h4><span lang-ar>مسؤولة الجودة والأداء</span><span lang-en>Quality & Performance Officer</span></h4><span><span lang-ar>النقابة العامة للسيارات</span><span lang-en>General Automotive Syndicate</span></span></div></div>
+        <div class="timeline-item"><div class="card"><h4><span lang-ar>مساعدة مدير مشروع</span><span lang-en>Assistant Project Manager</span></h4><span><span lang-ar>إمداد الخبرات — مشروع شركة علم</span><span lang-en>Imdad Al-Khibraat — Elm Company Project</span></span></div></div>
+        <div class="timeline-item"><div class="card"><h4><span lang-ar>قائدة فريق العمليات والأداء</span><span lang-en>Operations & Performance Team Leader</span></h4><span><span lang-ar>مؤسسة القناعة</span><span lang-en>Al-Qanaah Establishment</span></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 12) الشهادات ============ -->
+  <section id="certifications" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>الشهادات</span><span lang-en>Certifications</span></div>
+        <h2 class="section-title"><span lang-ar>الشهادات المهنية</span><span lang-en>Professional Certifications</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="card cert-card">
+          <div class="cert-thumb"><img src="images/certs/pmp.png" alt="PMP®" loading="lazy" /></div>
+          <h4>PMP®</h4><span><span lang-ar>Above Target — 2026</span><span lang-en>Above Target — 2026</span></span>
+        </div>
+        <div class="card cert-card">
+          <div class="cert-thumb"><img src="images/certs/capm.png" alt="CAPM®" loading="lazy" /></div>
+          <h4>CAPM®</h4><span>2024</span>
+        </div>
+        <div class="card cert-card">
+          <div class="cert-thumb"><img src="images/certs/cbp-ls.png" alt="CBP — Leadership" loading="lazy" /></div>
+          <h4>CBP — Leadership</h4><span>2023</span>
+        </div>
+        <div class="card cert-card">
+          <div class="cert-thumb"><span class="media-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"></circle><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5"></path></svg></span></div>
+          <h4><span lang-ar>برنامج اللغة الإنجليزية</span><span lang-en>English Language Program</span></h4><span>LSI Auckland</span>
+        </div>
+        <div class="card cert-card">
+          <div class="cert-thumb"><img src="images/certs/tableau-business-analysis.png" alt="Tableau — Business Analysis Process" loading="lazy" /></div>
+          <h4><span lang-ar>Tableau</span><span lang-en>Tableau</span></h4><span><span lang-ar>Business Analysis Process</span><span lang-en>Business Analysis Process</span></span>
+          <a href="https://coursera.org/verify/W624FXLVYWPI" class="verify" target="_blank" rel="noopener"><span lang-ar>رابط التحقق</span><span lang-en>Verify</span></a>
+        </div>
+        <div class="card cert-card">
+          <div class="cert-thumb"><img src="images/certs/tableau-intro-business-analytics.png" alt="Tableau — Introduction to Business Analytics" loading="lazy" /></div>
+          <h4><span lang-ar>Tableau</span><span lang-en>Tableau</span></h4><span><span lang-ar>Introduction to Business Analytics</span><span lang-en>Introduction to Business Analytics</span></span>
+          <a href="https://coursera.org/verify/YKXARPUJ576Y" class="verify" target="_blank" rel="noopener"><span lang-ar>رابط التحقق</span><span lang-en>Verify</span></a>
+        </div>
+      </div>
+      <p class="certs-note"><span lang-ar>روابط تحقق إضافية متوفرة عند الطلب.</span><span lang-en>Additional verification links are available upon request.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ 13) آراء العملاء ============ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>آراء العملاء</span><span lang-en>Client Testimonials</span></div>
+        <h2 class="section-title"><span lang-ar>ماذا يقول عملائي</span><span lang-en>What Clients Say</span></h2>
+      </div>
+      <div class="testimonials-placeholder">
+        <span lang-ar>سيتم إضافة آراء العملاء بعد الحصول على موافقتهم الصريحة.</span>
+        <span lang-en>Client testimonials will be added here once their explicit consent is obtained.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 14) الأسئلة المتكررة ============ -->
+  <section id="faq" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow"><span lang-ar>الأسئلة المتكررة</span><span lang-en>FAQ</span></div>
+        <h2 class="section-title"><span lang-ar>أسئلة شائعة</span><span lang-en>Frequently Asked Questions</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>ما أنواع الملفات التي يمكن تحليلها؟</span><span lang-en>What file types can be analyzed?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>Excel وCSV، بالإضافة إلى مصادر بيانات أخرى يتم الاتفاق عليها حسب طبيعة مشروعك.</span><span lang-en>Excel and CSV, plus other data sources agreed upon based on your project's needs.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>هل يمكن تطوير تقرير Power BI موجود لديّ؟</span><span lang-en>Can an existing Power BI report be improved?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>نعم، بعد مراجعة التقرير الحالي ونموذج البيانات والمعادلات المستخدمة فيه.</span><span lang-en>Yes, after reviewing the existing report, its data model, and its formulas.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>هل يمكن التعامل مع بيانات سرية؟</span><span lang-en>Can confidential data be handled?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>نعم، بعد الاتفاق على متطلبات السرية وقناة نقل آمنة منفصلة عن نموذج طلب الخدمة.</span><span lang-en>Yes, after agreeing on confidentiality requirements and a secure transfer channel separate from the service request form.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>هل يتم تسليم ملف المصدر PBIX؟</span><span lang-en>Is the PBIX source file delivered?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>يُحدَّد ذلك ضمن عرض السعر حسب نطاق المشروع وطريقة التسليم المتفق عليها.</span><span lang-en>This is defined in the quote based on project scope and the agreed delivery method.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>هل تقدمين برامج تدريبية؟</span><span lang-en>Do you offer training programs?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>لا، لا أقدم برامج تدريبية — لكن يمكن تضمين جلسة تسليم وشرح لطريقة استخدام التقرير وتحديثه ضمن التسليم.</span><span lang-en>No, I don't offer training programs — a delivery and walkthrough session covering usage and updates can be included instead.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>كم تستغرق مدة تنفيذ المشروع عادة؟</span><span lang-en>How long does a typical project take?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>تعتمد المدة على حجم البيانات وتعقيد النطاق، ويتم تحديدها بدقة ضمن عرض السعر بعد اجتماع تحديد الاحتياج.</span><span lang-en>Timeline depends on data volume and scope complexity, and is set precisely in the quote after the requirements meeting.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>كم تبلغ تكلفة المشروع؟</span><span lang-en>How much does a project cost?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>لا توجد أسعار ثابتة، لأن كل مشروع يختلف في حجمه ونطاقه. يُرسل عرض سعر مخصص بعد مراجعة طلبك.</span><span lang-en>There are no fixed prices, since every project differs in size and scope. A custom quote is sent after reviewing your request.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>كم عدد جولات التعديل المسموح بها؟</span><span lang-en>How many revision rounds are included?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>يُحدَّد عدد جولات التعديل بوضوح في عرض السعر قبل بدء العمل، حتى لا تكون هناك مفاجآت لاحقًا.</span><span lang-en>The number of revision rounds is clearly stated in the quote before work begins, so there are no surprises later.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>هل الخدمات مناسبة للأفراد وليس فقط الشركات؟</span><span lang-en>Are these services suitable for individuals, not just companies?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>نعم، باقة Starter مصممة خصيصًا للأفراد وأصحاب المشاريع الصغيرة والباحثين.</span><span lang-en>Yes, the Starter package is designed specifically for individuals, small-project owners, and researchers.</span></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span><span lang-ar>ماذا يحدث بعد تسليم المشروع؟</span><span lang-en>What happens after the project is delivered?</span></span><span class="plus">+</span></button>
+          <div class="faq-a"><span lang-ar>تحصلين على جلسة تسليم وشرح، ويمكن الاتفاق على دعم فني إضافي حسب الباقة المختارة.</span><span lang-en>You receive a delivery and walkthrough session, and additional technical support can be arranged based on the chosen package.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 15) الدعوة النهائية ============ -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>
+        <span lang-ar>هل لديك بيانات كثيرة ولكن لا تحصل منها على رؤية واضحة؟</span>
+        <span lang-en>Do you have data but still lack a clear view of your performance?</span>
+      </h2>
+      <p>
+        <span lang-ar>لنحوّل بياناتك إلى لوحة معلومات تساعدك على فهم الأداء، واكتشاف الفرص والمشكلات، واتخاذ قرار أفضل.</span>
+        <span lang-en>Let's transform your data into an interactive dashboard that helps you understand performance, identify opportunities, and make better decisions.</span>
+      </p>
+      <div class="cta-actions">
+        <a href="request-service.html" class="btn btn-primary"><span lang-ar>ابدأ مشروعك</span><span lang-en>Start Your Project</span></a>
+        <a href="#" data-wa-link class="btn btn-whatsapp"><span lang-ar>تواصل عبر واتساب</span><span lang-en>Contact via WhatsApp</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ التواصل + Footer ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5><span lang-ar>حنين الفراتي</span><span lang-en>Hanin AlFurati</span></h5>
+          <p><span lang-ar>قائدة مشاريع وعمليات وتميّز تشغيلي | PMP®</span><span lang-en>Projects, Operations & Operational Excellence Leader | PMP®</span></p>
+          <p><span lang-ar>المدينة المنورة، المملكة العربية السعودية</span><span lang-en>Madinah, Saudi Arabia</span></p>
+        </div>
+        <div class="footer-col">
+          <h5><span lang-ar>روابط سريعة</span><span lang-en>Quick Links</span></h5>
+          <a href="#services"><span lang-ar>الخدمات</span><span lang-en>Services</span></a>
+          <a href="#projects"><span lang-ar>المشاريع</span><span lang-en>Projects</span></a>
+          <a href="#packages"><span lang-ar>الباقات</span><span lang-en>Packages</span></a>
+          <a href="request-service.html"><span lang-ar>طلب خدمة</span><span lang-en>Request Service</span></a>
+        </div>
+        <div class="footer-col">
+          <h5><span lang-ar>التواصل</span><span lang-en>Contact</span></h5>
+          <a href="#" data-tel-link><span lang-ar>اتصال مباشر</span><span lang-en>Call Now</span></a>
+          <a href="#" data-wa-link><span lang-ar>واتساب</span><span lang-en>WhatsApp</span></a>
+          <a href="#" data-email-link data-email-text><span lang-ar>بريد إلكتروني</span><span lang-en>Email</span></a>
+          <a href="#" data-linkedin-link target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="footer-col">
+          <h5><span lang-ar>قانوني</span><span lang-en>Legal</span></h5>
+          <a href="privacy.html"><span lang-ar>سياسة الخصوصية</span><span lang-en>Privacy Policy</span></a>
+          <a href="terms.html"><span lang-ar>شروط الخدمة</span><span lang-en>Terms of Service</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><span lang-ar>© 2026 حنين الفراتي. جميع الحقوق محفوظة.</span><span lang-en>© 2026 Hanin AlFurati. All rights reserved.</span></span>
+        <span data-phone-text></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر واتساب عائم + زر العودة للأعلى -->
+  <a href="#" data-wa-link class="whatsapp-float" aria-label="WhatsApp">💬</a>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

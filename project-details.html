@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+  project-details.html — قالب دراسة حالة موحّد لكل المشاريع
+  ======================================================================
+  هذه الصفحة عامة وتُستخدم لكل المشاريع عبر رابط مثل:
+  project-details.html?id=facility-health
+  محتوى كل مشروع (الاسم، الوصف، المؤشرات...) يُقرأ من PROJECTS_DATA
+  في أعلى ملف script.js. لإضافة مشروع جديد أو تعديل موجود، عدّلي هناك فقط.
+-->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><span lang-ar>دراسة حالة</span> | Hanin AlFurati</title>
+  <meta name="description" content="دراسة حالة مشروع تحليل بيانات وتصميم تقرير Power BI." />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">HF</span>
+        <span class="brand-name-ar">حنين الفراتي</span>
+        <span class="brand-name-en">Hanin AlFurati</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#projects"><span lang-ar>كل المشاريع</span><span lang-en>All Projects</span></a>
+        <a href="request-service.html"><span lang-ar>طلب خدمة</span><span lang-en>Request Service</span></a>
+        <a href="index.html#contact"><span lang-ar>التواصل</span><span lang-en>Contact</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle">AR | EN</button>
+        <button class="theme-toggle">🌓</button>
+        <button class="nav-toggle" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- يُملأ بالكامل تلقائيًا عبر initProjectDetails() في script.js حسب ?id= في الرابط -->
+  <div id="caseStudyRoot"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span><span lang-ar>© 2026 حنين الفراتي. جميع الحقوق محفوظة.</span><span lang-en>© 2026 Hanin AlFurati. All rights reserved.</span></span>
+      <div>
+        <a href="privacy.html" style="display:inline; margin-inline-end:14px"><span lang-ar>الخصوصية</span><span lang-en>Privacy</span></a>
+        <a href="terms.html" style="display:inline"><span lang-ar>الشروط</span><span lang-en>Terms</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" data-wa-link class="whatsapp-float" aria-label="WhatsApp">💬</a>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
