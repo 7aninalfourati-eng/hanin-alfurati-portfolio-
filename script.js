@@ -21,7 +21,7 @@ const SITE_CONFIG = {
   email: "hi@dirah.sa",
   linkedin: "https://www.linkedin.com/in/hanin-alfurati-6a0170168",
   // اتركيه فارغًا لتعطيل الإرسال المباشر عبر Formspree (سيبقى واتساب يعمل دائمًا)
-  formspreeEndpoint: "",
+  formspreeEndpoint: "https://formspree.io/f/xppwwnzn",
 };
 
 const WHATSAPP_DEFAULT_TEXT = {
