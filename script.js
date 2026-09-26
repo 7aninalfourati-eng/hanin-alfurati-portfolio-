@@ -231,6 +231,129 @@ const PROJECTS_DATA = [
       en: "The cost-per-square-meter indicator was adopted as the primary reference when pricing similar future projects.",
     },
   },
+  {
+    id: "residential-compound-assets",
+    category: "facilities",
+    image: "projects/project-06-compound/cover.jpg",
+    name: { ar: "لوحة إدارة أصول وصيانة مجمع سكني", en: "Residential Compound Asset & Maintenance Dashboard" },
+    field: { ar: "إدارة المرافق", en: "Facilities Management" },
+    sector: { ar: "إدارة المجمعات السكنية والصيانة", en: "Residential Compounds & Maintenance" },
+    problem: {
+      ar: "نظام تقارير متكامل لمجمع سكني متعدد المباني، يربط خريطة المبنى التفاعلية بسجل الأصول وأوامر الصيانة والتكلفة، لمتابعة حالة كل مبنى على حدة بدل الاعتماد على جداول متفرقة.",
+      en: "An integrated reporting system for a multi-building residential compound, linking an interactive site map to the asset register, work orders, and cost — tracking each building's status individually instead of scattered spreadsheets.",
+    },
+    dataNature: {
+      ar: "سجل أصول (93 أصلًا في 13 فئة)، بيانات استهلاك ومواد (137 مادة)، وسجل أوامر عمل يتجاوز 5,600 أمر عبر 5 أقسام صيانة.",
+      en: "An asset register (93 assets across 13 categories), consumption and materials data (137 materials), and a work-order log exceeding 5,600 orders across 5 maintenance departments.",
+    },
+    analysisSteps: {
+      ar: [
+        "تصميم خريطة مبنى تفاعلية للتنقل بين مباني المجمع",
+        "بناء سجل الأصول وربطه بالفئة والعمر الافتراضي المتبقي",
+        "تصنيف أوامر العمل إلى صيانة تصحيحية ووقائية (PPM) ومتابعة حالتها",
+        "احتساب التكلفة الإجمالية والاستهلاك لكل مبنى وكل قسم صيانة",
+      ],
+      en: [
+        "Designing an interactive site map to navigate between the compound's buildings",
+        "Building the asset register linked to category and remaining useful life",
+        "Classifying work orders into corrective and preventive maintenance (PPM), tracking status",
+        "Calculating total cost and consumption per building and per maintenance department",
+      ],
+    },
+    tools: ["Power BI", "DAX", "Data Modeling"],
+    metrics: [
+      { ar: "إجمالي الأصول والتكلفة", en: "Total Assets & Cost" },
+      { ar: "أوامر العمل المنجزة", en: "Completed Work Orders" },
+      { ar: "الصيانة الوقائية (PPM)", en: "Preventive Maintenance (PPM)" },
+    ],
+    systems: ["Electrical", "Mechanical", "HVAC", "Civil", "Landscaping", "Housekeeping"],
+    recommendations: {
+      ar: "التوصية بمراجعة الأصول ذات العمر الافتراضي الأقل أولاً، وتوجيه الميزانية نحو الأقسام الأعلى تكلفة استهلاكًا.",
+      en: "Recommended reviewing assets with the lowest remaining useful life first, and directing budget toward the highest-consumption-cost departments.",
+    },
+  },
+  {
+    id: "pilgrim-housing-analytics",
+    category: "operations",
+    image: "projects/project-07-housing/cover.jpg",
+    name: { ar: "لوحة تحليل إسكان وعقود الحجاج", en: "Pilgrim Housing & Contracts Analytics Dashboard" },
+    field: { ar: "تحليل أعمال", en: "Business Analytics" },
+    sector: { ar: "الحج والعمرة وقطاع الضيافة", en: "Hajj, Umrah & Hospitality" },
+    problem: {
+      ar: "لوحة لمتابعة عقود إسكان الحجاج عبر عشرات الفنادق ومكاتب الخدمة، لقياس الإشغال حسب الجنسية والجهة والفندق، ودعم قرارات التعاقد للموسم القادم.",
+      en: "A dashboard tracking pilgrim housing contracts across dozens of hotels and service offices, measuring occupancy by nationality, entity, and hotel to support next season's contracting decisions.",
+    },
+    dataNature: {
+      ar: "بيانات أكثر من 480 عقدًا و125 فندقًا، تغطي أكثر من 80,000 حاج من 13 جنسية مختلفة.",
+      en: "Data from 480+ contracts and 125 hotels, covering over 80,000 pilgrims across 13 different nationalities.",
+    },
+    analysisSteps: {
+      ar: [
+        "توحيد بيانات العقود والفنادق ومكاتب الخدمة من مصادر متعددة",
+        "بناء فلاتر تفاعلية حسب تاريخ العقد ونوع السكن والجهة والجنسية",
+        "تصميم مؤشرات الإشغال حسب الفندق والجنسية والجهة",
+        "بناء خريطة توزيع جغرافي للحجاج حسب الجنسية",
+      ],
+      en: [
+        "Consolidating contract, hotel, and service-office data from multiple sources",
+        "Building interactive filters by contract date, housing type, entity, and nationality",
+        "Designing occupancy indicators by hotel, nationality, and entity",
+        "Building a geographic distribution map of pilgrims by nationality",
+      ],
+    },
+    tools: ["Power BI", "Power Query", "Data Modeling"],
+    metrics: [
+      { ar: "عدد الحجاج والعقود", en: "Pilgrims & Contracts Count" },
+      { ar: "الإشغال حسب الفندق", en: "Occupancy by Hotel" },
+      { ar: "التوزيع حسب الجنسية", en: "Distribution by Nationality" },
+    ],
+    systems: [],
+    recommendations: {
+      ar: "التوصية بمراجعة العقود ذات نسبة الشواغر الأعلى قبل الموسم القادم، وإعادة توزيع السعة حسب أعلى الجنسيات كثافة.",
+      en: "Recommended reviewing the contracts with the highest vacancy rates ahead of next season, and reallocating capacity toward the highest-density nationalities.",
+    },
+  },
+  {
+    id: "hajj-control-room-stats",
+    category: "operations",
+    image: "projects/project-08-control-room/cover.jpg",
+    name: { ar: "لوحة إحصائيات غرفة عمليات الحج اليومية", en: "Hajj Operations Control-Room Statistics Dashboard" },
+    field: { ar: "العمليات الميدانية", en: "Field Operations" },
+    sector: { ar: "الحج والعمليات الميدانية", en: "Hajj & Field Operations" },
+    problem: {
+      ar: "لوحة متابعة حية لحركة الحجاج اليومية والتراكمية (وصول ومغادرة عبر الحافلات والقطار والطيران)، مع مؤشرات الحالات الصحية والسلامة والمتابعة الميدانية، لدعم قرارات غرفة العمليات لحظيًا.",
+      en: "A live dashboard tracking daily and cumulative pilgrim movement (arrivals and departures by bus, train, and air), alongside health, safety, and field-follow-up indicators, supporting real-time control-room decisions.",
+    },
+    dataNature: {
+      ar: "بيانات حركة يومية وتراكمية لعشرات آلاف الحجاج، وسجلات صحية وسلامة وطوارئ محدّثة باستمرار خلال الموسم.",
+      en: "Daily and cumulative movement data for tens of thousands of pilgrims, plus continuously updated health, safety, and emergency logs throughout the season.",
+    },
+    analysisSteps: {
+      ar: [
+        "توحيد بيانات الحركة اليومية من عدة جهات ووسائل نقل",
+        "تصميم مؤشرات المغادرة والوصول والمتبقي بشكل يومي وتراكمي",
+        "دمج مؤشرات الحالات الصحية والمتابعة الميدانية والطوارئ في نفس اللوحة",
+        "بناء لوحة مقارنة بين جهتين تشغيليتين لنفس المؤشرات",
+      ],
+      en: [
+        "Consolidating daily movement data from multiple entities and transport modes",
+        "Designing daily and cumulative departure, arrival, and remaining-count indicators",
+        "Integrating health, field-follow-up, and emergency indicators into the same dashboard",
+        "Building a comparison view between two operating entities on the same metrics",
+      ],
+    },
+    tools: ["Power BI", "DAX", "Excel"],
+    metrics: [
+      { ar: "الوصول والمغادرة اليومي", en: "Daily Arrivals & Departures" },
+      { ar: "المتبقي التراكمي", en: "Cumulative Remaining" },
+      { ar: "الحالات الصحية والسلامة", en: "Health & Safety Cases" },
+    ],
+    systems: [],
+    recommendations: {
+      ar: "التوصية باعتماد اللوحة كمرجع موحّد لغرفة العمليات بدل التقارير المنفصلة، لتسريع اتخاذ القرار وقت الذروة.",
+      en: "Recommended adopting the dashboard as the control room's single reference instead of separate reports, to speed up decision-making during peak periods.",
+    },
+  },
 ];
 
 /* ---------- 3) الخدمات (تُستخدم لتمرير اسم الخدمة تلقائيًا لنموذج الطلب) ---------- */
